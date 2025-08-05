@@ -10,10 +10,10 @@ a <- a*2*pi*Tr/(c*(log(R)-log(r0)))
 # Compute (B')^{-1}
 B_prime_inv <- solve(B_prime)
 
-# p using relationship [11]
+# p using relationship [16]
 p <- Q_tot / sum(B_prime_inv %*% a)
 
-# Compute q* using relationship [10]
+# Compute q* using relationship [15]
 q_star <- B_prime_inv %*% (p * a)
 
 
